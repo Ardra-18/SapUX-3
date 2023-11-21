@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Employee Details Form</title>
+
+  <script 
+        src="https://openui5.hana.ondemand.com/resources/sap-ui-core.js"
+        id="sap-ui-bootstrap"
+        data-sap-ui-theme="sap_belize"
+        data-sap-ui-libs="sap.m"
+        data-sap-ui-compatVersion="edge"
+        data-sap-ui-resourceroots='{"com.ibm.simpleapp":"./"}'
+        data-sap-ui-preload="async"
+        ></script>
+
+  <script>
+    sap.ui.getCore().attachInit(function () {
+      sap.ui.require(["sap/ui/core/mvc/View"], function (oView) {
+        oView.create({
+          viewName: "YourViewName"
+        }).then(function (oView) {
+          oView.placeAt("content");
+        }).catch(function(err){
+            console.log("Something went wrong!")
+        })
+      });
+    });
+  </script>
+</head>
+<body class="sapUiBody" id="content"></body>
+</html>
