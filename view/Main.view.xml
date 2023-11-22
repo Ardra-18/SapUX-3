@@ -1,0 +1,27 @@
+<mvc:View
+  xmlns:mvc="sap.ui.core.mvc"
+  xmlns:l="sap.ui.layout"
+  xmlns="sap.m"
+  xmlns:f="sap.ui.layout.form"
+  controllerName="com.simpleapp.Controller.Maincontroller">
+
+
+  <f:SimpleForm id="mySimpleForm" layout="ResponsiveGridLayout" title="Employee Details">
+
+    <!-- First Column - Personal Details -->
+    <Label text="Personal Details" />
+    <Input id="firstNameInput" placeholder="First Name" />
+    <Input id="lastNameInput" placeholder="Last Name" />
+    <Input id="emailInput" type="Email" placeholder="Email" />
+    <Input id="phoneInput" type="Tel" placeholder="Phone Number" />
+
+    <!-- Second Column - Office Details -->
+    <Label text="Office Details" />
+    <Text id="companyNameText" text="Company Name: " />
+    <Link id="companyWebsiteLink" text="Company Website" href="http://www.companywebsite.com" />
+    <Text id="companyPhoneText" text="Company Phone: " />
+    <TextArea id="companyAddressTextArea" placeholder="Company Address" />
+
+  </f:SimpleForm>
+
+</mvc:View>
